@@ -18,14 +18,14 @@ public class addservlet extends HttpServlet {
 		
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
-		
-		if(username.equals("ramu")&& password.equals("ramu123")){
+		String cpassword=request.getParameter("cpassword");
+		if(username.equals("nikhil")&& password.equals("nikhil123")){
 		
 		RequestDispatcher r = request.getRequestDispatcher("home.html");
 		r.include(request,response);
 		}
 		else{
-			RequestDispatcher r = request.getRequestDispatcher("index.html");
+			RequestDispatcher r = request.getRequestDispatcher("valid.html");
 			r.forward(request,response);
 		}
 		
