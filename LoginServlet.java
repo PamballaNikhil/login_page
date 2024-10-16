@@ -45,7 +45,7 @@ public class LoginServlet extends HttpServlet {
 			}else
 			{
 				request.setAttribute("valid",error);
-				RequestDispatcher r = request.getRequestDispatcher("./index.jsp");
+				RequestDispatcher r = request.getRequestDispatcher(".valid.html");
 				r.include(request, response);
 			}
 		
